@@ -103,9 +103,7 @@ video {
   overflow-y: scroll;
 }
 
-.main__chat_window::-webkit-scrollbar {
-  display: none;
-}
+
 
 .main__message_container {
   padding: 1rem;
@@ -186,16 +184,7 @@ video {
     width: 100%;
   }
 
-  #showChat {
-    display: flex;
-  }
+  
 }
-
-
-
-
-
-
-
 
 

@@ -17,10 +17,13 @@ app.get('/:room',(req,res)=>{
     res.render('room',{roomId: req.params.room})
 })
 
+
 io.on('connection',socket=>{
     socket.on('join-room',(roomId,userId,userName)=>{      //On connection socket listening for join-room event
         socket.join(roomId)
-        socket.broadcast.to(roomId).emit('user-connected',userId)     //emit user-connected event
+        socket.broadcast.to(roomId).emit('user-connected',userId)
+
+             
         socket.on('message', (message) =>{
             io.to(roomId).emit('createMessage',message , userName)    //emit an event to create a message
         })

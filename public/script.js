@@ -9,6 +9,8 @@ const myVideo = document.createElement('video')
 myVideo.muted= true
 const peers = {}
 
+
+
 navigator.mediaDevices.getUserMedia({
     video: true,
     audio: true
@@ -16,19 +18,27 @@ navigator.mediaDevices.getUserMedia({
     myVideoStream = stream
     AddVideoStream(myVideo,stream)
 
-    myPeer.on('call',call =>{                                //answering the call
-        call.answer(stream)
-        const video = document.createElement('video')
+    myPeer.on('call',call =>{
 
+        call.answer(stream)                                 //answering the call when peer is connected
+        const video = document.createElement('video')
+                            
         call.on('stream',userVideoStream =>{
             AddVideoStream(video,userVideoStream)
-        })
+        })                              
+       
         
     })
 
-    socket.on('user-connected',userId =>{                            //on user-connected call a function to send and recieve videos
-        setTimeout(connectToNewUser , 1000 , userId, stream)
+
+
+    socket.on('user-connected',userId =>{
+        setTimeout(connectToNewUser , 1000 , userId, stream)       //on user-connected call a function to send and recieve videos
+                                                               
+    
     })
+
+
 
 })
 

@@ -15,15 +15,21 @@ Pre project setup:
 
 
   1)NodeJS - install nodejs from official website and install node
+  
   2)NPM  - npm is installed along with nodejs
 
 Project setup:
 
-  1)npm init in the project directory 
+  1)npm init in the project directory
+  
   2)Install Express,ejs,peer,uuid,socket.io in the project directory
+  
   3)Server.js file containing server side logic
+  
   4)room.ejs file as an html file
+  
   5)style.css file for styling
+  
   6)script.js file containing client side logic
 
 How to use the app:

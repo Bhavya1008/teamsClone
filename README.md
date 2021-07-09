@@ -4,14 +4,14 @@
 Check out my app on this link:       https://bhavya-teams-clone.herokuapp.com/ 
 App is built using:
 
-  1)HTML ,CSS, JS
-  2)NodeJS
-  3)Peerjs(web rtc)
-  4)Socket.io
+  HTML ,CSS, JS
+  NodeJS
+  Peerjs(web rtc)
+  Socket.io
 
 Pre project setup:
-  1)NodeJS - install nodejs from official website and install node
-  2)NPM  - npm is installed along with nodejs
+  NodeJS - install nodejs from official website and install node
+  NPM  - npm is installed along with nodejs
 
 Project setup:
 

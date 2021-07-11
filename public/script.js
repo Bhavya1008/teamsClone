@@ -92,6 +92,13 @@ send.addEventListener('click' , (e) =>{                     //on clicking send b
     }
 })
 
+text.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && text.value.length !== 0) {
+    socket.emit("message", text.value);
+    text.value = "";
+  }
+})
+
 const invitebutton = document.querySelector('#inviteButton');
 
 invitebutton.addEventListener('click' , (e) =>{                                 //room link on clicking invite button

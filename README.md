@@ -3,6 +3,8 @@
 
 Check out my app on this link: https://bhavya-teams-clone.herokuapp.com/
 
+Agile methodology and high level design used in building this app:  https://drive.google.com/file/d/10D1MN4vVpTqdUxzV9sx9Sr0XljLmVAz6/view?usp=sharing
+
 
 App is built using:
 
